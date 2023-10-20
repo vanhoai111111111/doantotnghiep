@@ -34,7 +34,7 @@ class CartController extends Controller
         $this->cartService = $cartService;
         $dataCategory = CategoryModel::all();
         $dataBrand = BrandModel::all();
-        $this->data_seo = new SeoHelper('Kính chào quý khách', 'Bàn decor, gương decor, thảm decor, ghể decor, tranh decor', 'VINANEON - Chuyên cung cấp những vật phẩm decor uy tín, chất lượng, giá rẻ', 'http://127.0.0.1:8000/cart');
+        $this->data_seo = new SeoHelper('', ' ', '', 'http://127.0.0.1:8000/cart');
         $this->middleware(function ($request, $next) {
             $this->cart = Session::get('cart');
             $this->coupon = Session::get('coupon');

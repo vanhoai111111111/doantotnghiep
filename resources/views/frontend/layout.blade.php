@@ -5,22 +5,11 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>VH STORE - {{$data_seo->meta_title}}</title>
     <!---seo------->
-    <meta name="description" content="{{$data_seo->meta_description}}">
-    <meta name="keywords" content="{{$data_seo->meta_keyword}}">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="canonical" href="{{$data_seo->url_canonical}}">
+    
     <meta content="" name="author"/>
     <!---seo fb------->
-    <meta property="og:site_name" content="http://127.0.0.1:8000/"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="{{$data_seo->url_canonical}}"/>
-    <meta property="og:title" content="Long Decor - {{$data_seo->meta_title}}"/>
-    <meta property="og:description" content="{{$data_seo->meta_description}}"/>
-    @if (isset($data_seo_image))
-        <meta property="og:image" content="{{$data_seo_image}}"/>
-    @else
-        <meta property="og:image" content="../libs/vinaneon-logo.jpg"/>
-    @endif
+    
+    
 
     <link rel="shortcut icon" type="image/x-icon" href="../libs/vinaneon-logo-1.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">

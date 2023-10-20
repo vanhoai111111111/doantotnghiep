@@ -15,7 +15,7 @@ class BrandController extends Controller
         view()->share('activeBrand', $active);
     }
     
-    //Danh sách không gian decor
+    //Danh sách 
     public function index()
     {
         $data = BrandModel::orderBy('brand_id', 'DESC')->paginate(5);
@@ -23,13 +23,13 @@ class BrandController extends Controller
         return view('backend.brands.list', ['data' => $data]);
     }
 
-    //Form thêm không gian decor
+    //Form 
     public function create()
     {
         return view('backend.brands.add');
     }
 
-    //Thêm không gian decor
+    //Thêm 
     public function store(BrandRequest $request)
     {
         $data = new BrandModel();
@@ -39,14 +39,14 @@ class BrandController extends Controller
         $data->brand_description = $request->brand_description;
 
         if($data->save()){
-            return redirect('admin/brands/create')->with('msgSuccess', 'Thêm không gian decor Thành Công');
+            return redirect('admin/brands/create')->with('msgSuccess', 'Thêm Thành Công');
         }
         else{
-            return redirect('admin/brands/create')->with('msgSuccess', 'Thêm không gian decor Thất Bại');
+            return redirect('admin/brands/create')->with('msgSuccess', 'Thêm Thất Bại');
         }
     }
 
-    //Form sửa không gian decor
+    //Form sửa 
     public function edit($id)
     {
         //
@@ -55,7 +55,7 @@ class BrandController extends Controller
         return view('backend.brands.update', ['data' => $data]);
     }
 
-    //Cập nhật không gian decor
+    //Cập nhật 
     public function update(BrandRequest $request, $id)
     {
         $data = BrandModel::find($id);
@@ -65,23 +65,23 @@ class BrandController extends Controller
         $data->brand_description = $request->brand_description;
 
         if($data->save()){
-            return redirect()->back()->with('msgSuccess', 'Cập Nhật không gian decor Sản Phẩm Thành Công');
+            return redirect()->back()->with('msgSuccess', 'Cập Nhật Thành Công');
         }
         else{
-            return redirect()->back()->with('msgSuccess', 'Cập Nhật không gian decor Sản Phẩm Thất Bại');
+            return redirect()->back()->with('msgSuccess', 'Cập Nhật Thất Bại');
         }
     }
 
-    //Xóa không gian decor
+    //Xóa 
     public function destroy($id)
     {
         $data = BrandModel::find($id);
 
         if($data->delete()){
-            return response()->json(['msgSuccess'=>'Xóa không gian decor thành công']);
+            return response()->json(['msgSuccess'=>'Xóa thành công']);
         }
         else{
-            return response()->json(['msgError'=>'Xóa không gian decor thất bại']);
+            return response()->json(['msgError'=>'Xóa thất bại']);
         }
     }
 }
