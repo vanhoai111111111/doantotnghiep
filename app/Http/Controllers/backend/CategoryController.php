@@ -36,10 +36,10 @@ class CategoryController extends Controller
         $data->category_description = $request->category_description;
 
         if($data->save()){
-            return redirect('admin/categorys/create')->with('msgSuccess', 'Thêm Loại Sản Phẩm Thành Công');
+            return redirect('admin/categorys/create')->with('msgSuccess', 'Thêm Thành Công');
         }
         else{
-            return redirect('admin/categorys/create')->with('msgError', 'Thêm Loại Sản Phẩm Thất Bại');
+            return redirect('admin/categorys/create')->with('msgError', 'Thêm Thất Bại');
         }
 
     }
@@ -59,10 +59,10 @@ class CategoryController extends Controller
         $data->category_description = $request->category_description;
 
         if($data->save()){
-            return redirect()->back()->with('msgSuccess', 'Cập Nhật Loại Sản Phẩm Thành Công');
+            return redirect()->back()->with('msgSuccess', 'Cập Nhật Thành Công');
         }
         else{
-            return redirect()->back()->with('msgSuccess', 'Cập Nhật Loại Sản Phẩm Thất Bại');
+            return redirect()->back()->with('msgSuccess', 'Cập Nhật Thất Bại');
         }
     }
 
@@ -70,10 +70,10 @@ class CategoryController extends Controller
         $data = CategoryModel::find($id);
 
         if($data->delete()){
-            return response()->json(['msgSuccess'=>'Xóa Loại sản phẩm thành công']);
+            return response()->json(['msgSuccess'=>'Xóa thành công']);
         }
         else{
-            return response()->json(['msgError'=>'Xóa Loại sản phẩm thất bại']);
+            return response()->json(['msgError'=>'Xóa thất bại']);
         }
     }
 }
