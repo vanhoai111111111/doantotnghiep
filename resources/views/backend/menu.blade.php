@@ -19,7 +19,7 @@
           @endphp">
           <a class="nav-link" href="admin/categorys">
             <i class="material-icons">content_paste</i>
-            <p>Loại Sản Phẩm</p>
+            <p>Hãng sản phẩm</p>
           </a>
         </li>
         <li class="nav-item @php
@@ -28,7 +28,7 @@
           @endphp">
           <a class="nav-link" href="admin/brands">
             <i class="material-icons">content_paste</i>
-            <p>Không Gian Decor</p>
+            <p>danh mục</p>
           </a>
         </li>
         <li class="nav-item @php

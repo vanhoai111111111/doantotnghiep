@@ -82,9 +82,9 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Loại Sản Phẩm</label>
+                      <label class="bmd-label-floating">Hãng Sản Phẩm</label>
                       <select name="category_id" class="form-control">
-                        <option value="">---Chọn Loại---</option>
+                        <option value="">---Chọn Hãng---</option>
                         @foreach ($dataCategory as $item)
                           <option value="{{$item->category_id}}">{{$item->category_name}}</option>
                         @endforeach
@@ -96,7 +96,7 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Không gian decor</label>
+                      <label class="bmd-label-floating">Danh Mục</label>
                       <select name="brand_id" class="form-control">
                         <option value="">---Chọn Không Gian---</option>
                         @foreach ($dataBrand as $item)

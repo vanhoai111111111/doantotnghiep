@@ -11,13 +11,13 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Sửa loại sản phẩm</h4>
+              <h4 class="card-title">Sửa Hãng sản phẩm</h4>
             </div>
             <div class="card-body">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Tên loại Sản Phẩm</label>
+                      <label class="bmd-label-floating">Tên Hãng Sản Phẩm</label>
                       <input type="text" name="category_name" value="{{$data->category_name}}" class="form-control">
                       @error('category_name')
                           <span class="text-danger">{{$message}}</span>
@@ -49,8 +49,8 @@
                 </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary pull-right">Sửa Loại Sản Phẩm</button>
-          <a href="/admin/categorys" class="btn btn-primary pull-right">Danh sách loại sản phẩm</a>
+          <button type="submit" class="btn btn-primary pull-right">Sửa Hãng Sản Phẩm</button>
+          <a href="/admin/categorys" class="btn btn-primary pull-right">Danh sách Hãng sản phẩm</a>
         <div class="clearfix"></div>
         </div>
       </div>

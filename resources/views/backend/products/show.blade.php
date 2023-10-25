@@ -43,14 +43,14 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="bmd-label-floating">Loại:</label>
+                                    <label class="bmd-label-floating">Hãng:</label>
                                     <span> {{ $data->category->category_name}}</span>
 
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label class="bmd-label-floating">Không gian:</label>
+                                    <label class="bmd-label-floating">Danh Mục:</label>
                                     <span> {{ $data->brand->brand_name}}</span>
 
                                 </div>

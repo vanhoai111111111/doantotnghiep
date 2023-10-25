@@ -17,8 +17,8 @@
                 <table class="table">
                     <thead class=" text-primary">
                         <th>Tên</th>
-                        <th>Loại</th>
-                        <th>Không Gian</th>
+                        <th>Hãng</th>
+                        <th>Danh Mục</th>
                         <th>Hình Ảnh</th>
                         <th>Kho Hàng</th>
                         <th></th>

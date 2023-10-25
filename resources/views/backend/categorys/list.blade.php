@@ -4,12 +4,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <a href="admin/categorys/create" class="btn btn-primary" data-color="green">Đăng loại sản phẩm mới</a>
+            <a href="admin/categorys/create" class="btn btn-primary" data-color="green">Đăng Hãng sản phẩm mới</a>
         </div>
         <div class="col-md-12">
             <div class="card">
             <div class="card-header card-header-primary">
-                <h4 class="card-title ">Danh Sách Loại Sản Phẩm</h4>
+                <h4 class="card-title ">Danh Sách Hãng Sản Phẩm</h4>
                 {{-- <p class="card-category"> Here is a subtitle for this table</p> --}}
             </div>
 
@@ -19,7 +19,7 @@
                 <div class="table-responsive table-hover">
                 <table class="table">
                     <thead class="text-primary">
-                        <th style="width: 150px;">Tên Loại</th>
+                        <th style="width: 150px;">Tên Hãng</th>
                         <th class="text-center">Số sản phẩm</th>
                         <th>Thông tin</th>
                         <th></th>

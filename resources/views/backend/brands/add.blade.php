@@ -10,13 +10,13 @@
         <div class="col-md-12">
           <div class="card">
             <div class="card-header card-header-primary">
-              <h4 class="card-title">Thêm Không Gian Decor</h4>
+              <h4 class="card-title">Thêm danh mục</h4>
             </div>
             <div class="card-body">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Tên Không Gian Decor</label>
+                      <label class="bmd-label-floating">Tên Danh Mục</label>
                       <input type="text" value="{{ old('brand_name') }}" name="brand_name" class="form-control">
                       @error('brand_name')
                           <span class="text-danger">{{$message}}</span>
@@ -48,8 +48,8 @@
                 </div>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary pull-right">Thêm Không Gian Decor</button>
-          <a href="/admin/brands" class="btn btn-primary pull-right">Danh sách không gian decor</a>
+          <button type="submit" class="btn btn-primary pull-right">Thêm Danh Mục</button>
+          <a href="/admin/brands" class="btn btn-primary pull-right">Danh sách Danh Mục</a>
         <div class="clearfix"></div>
         </div>
       </div>

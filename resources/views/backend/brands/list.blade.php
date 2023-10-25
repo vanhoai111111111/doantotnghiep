@@ -4,12 +4,12 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12">
-            <a href="admin/brands/create" class="btn btn-primary" data-color="green">Thêm Không Gian Decor</a>
+            <a href="admin/brands/create" class="btn btn-primary" data-color="green">Thêm Danh Mục</a>
         </div>
         <div class="col-md-12">
             <div class="card">
             <div class="card-header card-header-primary">
-                <h4 class="card-title ">Không Gian Decor</h4>
+                <h4 class="card-title ">Danh Mục</h4>
             </div>
 
             @include('backend.note')
@@ -18,7 +18,7 @@
                 <div class="table-responsive table-hover">
                 <table class="table">
                     <thead class="text-primary text-center">
-                        <th style="width: 150px;">Không Gian</th>
+                        <th style="width: 150px;">Danh Mục</th>
                         <th class="text-center">Số sản phẩm</th>
                         <th>Thông tin</th>
                         <th></th>
