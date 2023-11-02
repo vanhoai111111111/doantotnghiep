@@ -22,7 +22,7 @@
                         </div>
                         <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
                             <div class="slide__thumb">
-                                <img src="{{$slide->image}}" alt="slider images VINANEON">
+                                <img src="{{$slide->image}}" alt="slider images">
                             </div>
                         </div>
                     </div>
