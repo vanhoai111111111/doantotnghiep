@@ -33,6 +33,32 @@
         </div>
     </div>
     <!-- Start Slider Area -->
+    @if ($search_keyword1 != null)
+    <section class="htc__category__area ptb--100">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section__title--2 text-center">
+                        <h2 class="title__line">GỢI Ý HÔM NAY</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="htc__product__container">
+                <div class="row">
+                    <div class="product__list clearfix mt--30">
+                        @foreach ($search_keyword1 as $item)
+                            <!-- Start Single Category -->
+                            <div class="col-md-4 col-lg-3 col-sm-4 col-xs-6" style="height: 390px">
+                            @include('frontend.libs.product')
+                            </div>
+                            <!-- End Single Category -->
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
     <!-- Start Product new Area -->
     <section class="htc__category__area ptb--100">
         <div class="container">

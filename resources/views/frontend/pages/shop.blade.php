@@ -82,7 +82,7 @@
                         <!-- End Prize Range -->
                         <!-- Start Category Area -->
                         <div class="htc__category">
-                            <h4 class="title__line--4">Loại Sản Phẩm</h4>
+                            <h4 class="title__line--4">Hãng sản phẩm</h4>
                             <ul class="ht__cat__list">
                                 @foreach ($dataCategory as $item)
                                 <li><a href="/shop/category/{{$item->category_id}}">{{$item->category_name}}</a></li>
@@ -92,7 +92,7 @@
                         <!-- End Category Area -->
                         <!-- Start Category Area -->
                         <div class="htc__category">
-                            <h4 class="title__line--4">Không Gian</h4>
+                            <h4 class="title__line--4">danh mục</h4>
                             <ul class="ht__cat__list">
                                 @foreach ($dataBrand as $item)
                                 <li><a href="/shop/brand/{{$item->brand_id}}">{{$item->brand_name}}</a></li>

@@ -125,13 +125,13 @@
                                 </div>
                             </form>
                                 <div class="sin__desc align--left">
-                                    <p><span>Loại sản phẩm:</span></p>
+                                    <p><span>Hãng sản phẩm:</span></p>
                                     <ul class="pro__cat__list">
                                         <li><a href="/shop/category/{{$data->category_id}}">{{$data->category->category_name}}</a></li>
                                     </ul>
                                 </div>
                                 <div class="sin__desc align--left">
-                                    <p><span>Không gian decor:</span></p>
+                                    <p><span>Danh mục:</span></p>
                                     <ul class="pro__cat__list">
                                         <li><a href="/shop/brand/{{$data->brand_id}}">{{$data->brand->brand_name}}</a></li>
                                     </ul>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>VH STORE - {{$data_seo->meta_title}}</title>
+    <title>VH STORE </title>
     <!---seo------->
     
     <meta content="" name="author"/>
@@ -11,7 +11,7 @@
     
     
 
-    <link rel="shortcut icon" type="image/x-icon" href="../libs/vinaneon-logo-1.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../libs/logo.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     
 
@@ -99,7 +99,7 @@
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
                             <div class="footer">
-                                <h2 class="title__line--2">kHÔNG GIAN</h2>
+                                <h2 class="title__line--2">Danh Mục</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         @foreach ($dataBrand as $item)
@@ -113,7 +113,7 @@
                         <!-- Start Single Footer Widget -->
                         <div class="col-md-2 col-sm-6 col-xs-12 xmt-40">
                             <div class="footer">
-                                <h2 class="title__line--2">LOẠI SẢN PHẨM</h2>
+                                <h2 class="title__line--2">Hãng SẢN PHẨM</h2>
                                 <div class="ft__inner">
                                     <ul class="ft__list">
                                         @foreach ($dataCategory as $item)

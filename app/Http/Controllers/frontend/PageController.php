@@ -26,7 +26,7 @@ class PageController extends Controller
         $priceMin = ProductModel::min('product_price_sell');
         $dataCategory = CategoryModel::all();
         $dataBrand = BrandModel::all();
-        $this->data_seo = new SeoHelper('Kính chào quý khách', 'Bàn decor, gương decor, thảm decor, ghể decor, tranh decor', 'VINANEON - Chuyên cung cấp những vật phẩm decor uy tín, chất lượng, giá rẻ', 'http://127.0.0.1:8000/');
+        
         view()->share([
             'dataCategory' => $dataCategory, 
             'dataBrand' => $dataBrand, 
@@ -34,7 +34,7 @@ class PageController extends Controller
             'priceMin' => $priceMin,
             'priceMinFilter' => $priceMin+2000000,
             'priceMaxFilter' => $priceMax-2000000,
-            'data_seo' => $this->data_seo,
+            
         ]);
     }
 
@@ -46,6 +46,8 @@ class PageController extends Controller
         $dataSilde = SlideModel::where('active', 1)->where('type', 1)->orderBy('id', 'DESC')->limit(4)->get();
         $dataBanner = SlideModel::where('active', 1)->where('type', 2)->orderBy('id', 'DESC')->first();
         $dataPost = PostModel::orderBy('id', 'DESC')->limit(4)->get();
+        $searchKeyword = session('search_keyword');
+        $search_keyword1 = ProductModel::where('product_name', 'LIKE', '%'.$searchKeyword.'%')->limit(4)->get();
 
         return view('frontend.pages.home',[
             'dataProductNews' => $dataProductNews,
@@ -55,11 +57,12 @@ class PageController extends Controller
             'dataSilde' => $dataSilde,
             'dataBanner' => $dataBanner,
             'dataPost' => $dataPost,
+            'search_keyword1' => $search_keyword1,
         ]);
     }
 
     public function shop(){
-        $this->data_seo = new SeoHelper('Cửa hàng','Bàn decor, gương decor, thảm decor, ghể decor, tranh decor', 'VINANEON - Chuyên cung cấp những vật phẩm decor uy tín, chất lượng, giá rẻ', 'http://127.0.0.1:8000/shop');
+        
         $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(4)->get();
 
         if($this->checkFilter()){
@@ -74,6 +77,8 @@ class PageController extends Controller
         else if($this->checkSearch()){
             $keyword = $_GET['search_keyword'];
             $data = ProductModel::where('product_name', 'LIKE', '%'.$keyword.'%')->paginate(9);
+            
+            Session::put('search_keyword', $keyword);
         }
         else{
             $data = ProductModel::orderBy('product_id', 'DESC')->paginate(9);
@@ -81,14 +86,14 @@ class PageController extends Controller
         return view('frontend.pages.shop',[
             'data' => $data,
             'dataProductSales' => $dataProductSales,
-            'data_seo' => $this->data_seo,
+            
         ]);
     }
 
     public function category($id){
         $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(4)->get();
         $data_category = CategoryModel::find($id);
-        $this->data_seo = new SeoHelper($data_category->category_name, $data_category->category_keyword, $data_category->category_description, 'http://127.0.0.1:8000/shop/');
+    
         if($this->checkFilter()){
             // echo $id;
             $price_start = $_GET['price_start'];
@@ -105,14 +110,14 @@ class PageController extends Controller
         return view('frontend.pages.shop',[
             'data' => $data,
             'dataProductSales' => $dataProductSales,
-            'data_seo' => $this->data_seo,
+         
         ]);
     }
 
     public function brand($id){
         $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(4)->get();
         $data_brand = BrandModel::find($id);
-        $this->data_seo = new SeoHelper($data_brand->brand_name, $data_brand->brand_keyword, $data_brand->brand_description, 'http://127.0.0.1:8000/shop/');
+    
         if($this->checkFilter()){
             $price_start = $_GET['price_start'];
             $price_end = $_GET['price_end'];
@@ -128,7 +133,7 @@ class PageController extends Controller
         return view('frontend.pages.shop',[
             'data' => $data,
             'dataProductSales' => $dataProductSales,
-            'data_seo' => $this->data_seo,
+           
         ]);
     }
 
@@ -153,7 +158,7 @@ class PageController extends Controller
             }
         }
 
-        $this->data_seo = new SeoHelper($data->product_name, $data->product_keyword, $data->product_description, 'http://127.0.0.1:8000/shop/product/'.$id);
+       
 
         return view('frontend.pages.product',[
             'data' => $data,
@@ -161,8 +166,6 @@ class PageController extends Controller
             'dataProductImages' => $dataProductImages,
             'dataComment' => $dataComment,
             'rating' => $rating,
-            'data_seo' => $this->data_seo,
-            'data_seo_image' => $data->product_image,
             'checkCmt' => $checkCmt,
         ]);
     }

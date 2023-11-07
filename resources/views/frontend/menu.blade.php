@@ -6,7 +6,7 @@
                 <div class="menumenu__container clearfix">
                     <div class="col-lg-2 col-md-2 col-sm-3 col-xs-5"> 
                         <div class="logo">
-                             <a href="/"><img src="../libs/vinaneon-logo-1.png" alt="logo images"></a>
+                             <a href="/"><img src="../libs/logo.png" alt="logo images"></a>
                         </div>
                     </div>
                     <div class="col-md-7 col-lg-8 col-sm-5 col-xs-3">
@@ -16,7 +16,7 @@
                                 <li class="drop"><a href="/shop">Cửa Hàng</a>
                                     <ul class="dropdown mega_dropdown">
                                         <!-- Start Single Mega MEnu -->
-                                        <li><a class="mega__title" href="/shop">Không Gian</a>
+                                        <li><a class="mega__title" href="/shop">Danh mục</a>
                                             <ul class="mega__item">
                                                 @foreach ($dataBrand as $item)
                                                 <li><a href="/shop/brand/{{$item->brand_id}}-{{Str::slug($item->brand_name, '-')}}.html">{{$item->brand_name}}</a></li>
@@ -25,7 +25,7 @@
                                         </li>
                                         <!-- End Single Mega MEnu -->
                                         <!-- Start Single Mega MEnu -->
-                                        <li><a class="mega__title" href="/shop">Loại Sản Phẩm</a>
+                                        <li><a class="mega__title" href="/shop">Hãng sản phẩm</a>
                                             <ul class="mega__item">
                                                 @foreach ($dataCategory as $item)
                                                 <li><a href="/shop/category/{{$item->category_id}}-{{Str::slug($item->category_name, '-')}}.html">{{$item->category_name}}</a></li>

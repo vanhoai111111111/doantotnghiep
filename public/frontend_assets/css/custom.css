@@ -19,8 +19,8 @@
 }
 
 .btn{
-    border: 1px solid #c43b68;
-    background: #c43b68;
+    border: 1px solid #3608eb;
+    background: #3608eb;
     color: white;
     border-radius: 0;
 }
@@ -33,7 +33,7 @@
 
 .btn:hover{
   background: white;
-  color: #c43b68;
+  color: #3608eb;
 }
 
 .ht__cat__thumb{
@@ -45,18 +45,18 @@
   width: 70px;
   height: 30px;
   top: 10px;
-  background-color: #c43b68;
+  background-color: #3608eb;
   color: white;
   text-align: center;
   line-height: 30px;
 }
 
 .pagination .active{
-  background-color: #c43b68;
+  background-color: #3608eb;
 }
 
 .text-success{
-  color: #c43b68;
+  color: #3608eb;
 }
 
 /* rating */

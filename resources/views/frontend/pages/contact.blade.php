@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
                 <div class="map-contacts--2">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.007319903309!2d108.15554591416989!3d16.06510994381712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219268a720e49%3A0x47d852a1a08a8eae!2zMzQgQ2jGoW4gVMOibSAxMSwgSG_DoCBNaW5oLCBMacOqbiBDaGnhu4N1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1638545287742!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62666.522128107674!2d106.66406586552063!3d10.989193828096294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d1085e2b1c37%3A0x73bfa5616464d0ee!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBUaOG7pyBE4bqndSBN4buZdA!5e0!3m2!1svi!2s!4v1699326467531!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
@@ -18,7 +18,7 @@
                     </div>
                     <div class="address__details">
                         <h2 class="ct__title">Địa Chỉ</h2>
-                        <p>34 Chơn Tâm 11, Hòa Minh, Liên Chiểu, Đà Nẵng</p>
+                        <p>Số 6, Trần Văn Ơn, thành phố Thủ Dầu Một, tỉnh Bình Dương</p>
                     </div>
                 </div>
                 <div class="address">
@@ -27,7 +27,7 @@
                     </div>
                     <div class="address__details">
                         <h2 class="ct__title">Số Điện Thoại</h2>
-                        <p>038 737 3837</p>
+                        <p>099 999 9999</p>
                     </div>
                 </div>
             </div>      
