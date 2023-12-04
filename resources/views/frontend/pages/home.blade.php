@@ -10,17 +10,8 @@
             <div class="single__slide animation__style01 slider__fixed--height">
                 <div class="container">
                     <div class="row align-items__center">
-                        <div class="col-md-7 col-sm-7 col-xs-12 col-lg-6">
-                            <div class="slide">
-                                <div class="slider__inner">
-                                    <h1>{{$slide->slide_title}}</h1>
-                                    <div class="cr__btn">
-                                        <a href="{{$slide->target}}">View Now</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-sm-5 col-xs-12 col-md-5">
+                        
+                        <div >
                             <div class="slide__thumb">
                                 <img src="{{$slide->image}}" alt="slider images">
                             </div>
@@ -158,7 +149,7 @@
             </div>
             <div class="row">
                 <div class="product__wrap clearfix">
-                    @foreach ($dataProductSell as $item)
+                    @foreach ($dataProductMostPurchased as $item)
                         <!-- Start Single Category -->
                         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-6" style="height: 390px">
                             <div class="category">

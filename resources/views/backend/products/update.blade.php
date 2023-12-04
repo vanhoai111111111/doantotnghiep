@@ -82,9 +82,9 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Loại Sản Phẩm</label>
+                      <label class="bmd-label-floating">Hãng Sản Phẩm</label>
                       <select name="category_id" class="form-control">
-                        <option value="">---Chọn Loại---</option>
+                        <option value="">---Chọn Hãng---</option>
                         @foreach ($dataCategory as $item)
                           <option value="{{$item->category_id}}"
                             @if ($item->category_id == $data->category_id)
@@ -100,9 +100,9 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <label class="bmd-label-floating">Thương Hiệu</label>
+                      <label class="bmd-label-floating">Danh Mục</label>
                       <select name="brand_id" class="form-control">
-                        <option value="">---Chọn Thương Hiệu---</option>
+                        <option value="">---Chọn Danh Mục---</option>
                         @foreach ($dataBrand as $item)
                           <option value="{{$item->brand_id}}"
                             @if ($item->brand_id == $data->brand_id)

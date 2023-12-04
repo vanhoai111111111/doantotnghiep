@@ -98,7 +98,7 @@
                     <div class="form-group">
                       <label class="bmd-label-floating">Danh Mục</label>
                       <select name="brand_id" class="form-control">
-                        <option value="">---Chọn Không Gian---</option>
+                        <option value="">---Chọn Danh Mục---</option>
                         @foreach ($dataBrand as $item)
                           <option value="{{$item->brand_id}}">{{$item->brand_name}}</option>
                         @endforeach

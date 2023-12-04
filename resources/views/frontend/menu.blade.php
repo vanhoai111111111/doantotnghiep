@@ -57,9 +57,15 @@
                             <div class="header__search search search__open">
                                 <a href=""><i class="icon-magnifier icons"></i></a>
                             </div>
-                            <div class="header__account">
-                                <a href="/customer"><i class="icon-user icons"></i></a>
-                            </div>
+                            @if(auth()->check())
+    <div class="">
+        <a href="/customer"><p style="white-space: nowrap;   padding-right: 10px;">Xin chào, {{ auth()->user()->user_name}}</p></a>
+    </div>
+@else
+    <div class="header__account">
+        <a href="/customer"><i class="icon-user icons"></i></a>
+    </div>
+@endif
                             <div class="htc__shopping__cart">
                                 {{-- <button class="cart__menu" type="button"><i class="icon-handbag icons"></button> --}}
                                 <a class="cart__menu" href="javascript:;"><i class="icon-handbag icons"></i></a>
