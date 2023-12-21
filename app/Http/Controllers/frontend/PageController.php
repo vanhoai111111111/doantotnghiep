@@ -39,15 +39,15 @@ class PageController extends Controller
     }
 
     public function index(){
-        $dataProductNews = ProductModel::orderBy('product_id', 'DESC')->paginate(8);
-        $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(8)->get();
+        $dataProductNews = ProductModel::orderBy('product_id', 'DESC')->paginate(6);
+        $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(6)->get();
         $dataProductSell = OrderdetailModel::groupBy('product_id')->select('product_id')->orderBy('order_detail_id', 'DESC')->limit(4)->get();
         $dataComment = CommentModel::where('comment_status', 3)->limit(4)->get();
         $dataSilde = SlideModel::where('active', 1)->where('type', 1)->orderBy('id', 'DESC')->limit(4)->get();
         $dataBanner = SlideModel::where('active', 1)->where('type', 2)->orderBy('id', 'DESC')->first();
         $dataPost = PostModel::orderBy('id', 'DESC')->limit(4)->get();
         $searchKeyword = session('search_keyword');
-        $search_keyword1 = ProductModel::where('product_name', 'LIKE', '%'.$searchKeyword.'%')->limit(4)->get();
+        $search_keyword1 = ProductModel::where('product_name', 'LIKE', '%'.$searchKeyword.'%')->limit(3)->get();
         $dataProductMostPurchased = OrderdetailModel::select('product_id', \DB::raw('SUM(order_detail_quantity) as total_quantity'))
         ->groupBy('product_id')
         ->orderByDesc('total_quantity')

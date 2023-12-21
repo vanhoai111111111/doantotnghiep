@@ -131,10 +131,22 @@
         </footer>
         <!-- Messenger Plugin chat Code -->
     <div id="fb-root"></div>
-
+    <script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/657408b070c9f2407f7dba1a/1hh6k3tee';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
     <!-- Your Plugin chat code -->
     <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+        
+        </div>
 
     <script>
       var chatbox = document.getElementById('fb-customer-chat');

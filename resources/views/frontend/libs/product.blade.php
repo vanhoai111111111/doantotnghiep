@@ -1,3 +1,5 @@
+<style>
+   </style>
 <div class="category">
     <div class="ht__cat__thumb">
         @if ($item->product_sale != 0)
@@ -37,7 +39,7 @@
         <h4><a href="/shop/product/{{$item->product_id}}-{{Str::slug($item->product_name, '-')}}.html">{{$item->product_name}}</a></h4>
         <ul class="fr__pro__prize">
             @if ($item->product_sale != 0)
-            <li class="old__prize">{{number_format($item->product_price_sell)}} VNĐ</li>
+            <li class="text-with-line"class="old__prize">{{number_format($item->product_price_sell)}} VNĐ</li>
             @endif
             <li>{{number_format($product_price_sale)}} VNĐ</li>
         </ul>

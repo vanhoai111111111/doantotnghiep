@@ -68,7 +68,7 @@
           @endphp">
           <a class="nav-link" href="admin/orders">
             <i class="material-icons">content_paste</i>
-            <p>Hóa Đơn</p>
+            <p>Đơn hàng</p>
           </a>
         </li>
         <li class="nav-item @php
