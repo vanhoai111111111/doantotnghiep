@@ -137,6 +137,7 @@
     </section>
     <!-- End Comment Area -->
     <!-- Start Top Rated Area -->
+    
     @if ($dataProductSell != null)
     <section class="top__rated__area bg__white pt--100 pb--110">
         <div class="container">
@@ -149,7 +150,7 @@
             </div>
             <div class="row">
                 <div class="product__wrap clearfix">
-                    @foreach ($dataProductMostPurchased as $item)
+                    @foreach ($dataProductSell as $item)
                         <!-- Start Single Category -->
                         <div class="col-md-4 col-lg-3 col-sm-4 col-xs-6" style="height: 390px">
                             <div class="category">
@@ -197,6 +198,7 @@
         </div>
     </section>
     @endif
+  
     <!-- End Top Rated Area -->
     <!-- Start Blog Area -->
     <section class="ftr__product__area ptb--100">
