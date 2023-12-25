@@ -39,8 +39,8 @@ class PageController extends Controller
     }
 
     public function index(){
-        $dataProductNews = ProductModel::orderBy('product_id', 'DESC')->paginate(6);
-        $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(6)->get();
+        $dataProductNews = ProductModel::orderBy('product_id', 'DESC')->paginate(8);
+        $dataProductSales = ProductModel::orderBy('product_sale', 'DESC')->limit(8)->get();
         $dataProductSell = OrderdetailModel::groupBy('product_id')->select('product_id')->orderBy('order_detail_id', 'DESC')->limit(4)->get();
         $dataComment = CommentModel::where('comment_status', 3)->limit(4)->get();
         $dataSilde = SlideModel::where('active', 1)->where('type', 1)->orderBy('id', 'DESC')->limit(4)->get();
