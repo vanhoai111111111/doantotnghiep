@@ -47,7 +47,7 @@ class PageController extends Controller
         $dataBanner = SlideModel::where('active', 1)->where('type', 2)->orderBy('id', 'DESC')->first();
         $dataPost = PostModel::orderBy('id', 'DESC')->limit(4)->get();
         $searchKeyword = session('search_keyword');
-        $search_keyword1 = ProductModel::where('product_name', 'LIKE', '%'.$searchKeyword.'%')->limit(4)->get();
+        $search_keyword1 = ProductModel::where('product_name', 'LIKE', '%'.$searchKeyword.'%')->inRandomOrder()->limit(4)->get();
         $dataProductMostPurchased = OrderdetailModel::select('product_id', \DB::raw('SUM(order_detail_quantity) as total_quantity'))
         ->groupBy('product_id')
         ->orderByDesc('total_quantity')
